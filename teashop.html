@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenLeaf Tea Shop</title>
+<style>
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f1e7;
+    }
+
+    h1 {
+        text-align: center;
+        color: #4a772f;
+    }
+
+    header p {
+        text-align: center;
+        color: #5b5b5b;
+    }
+
+    section > h2 {
+        text-align: center;
+        color: #2f5e1b;
+    }
+
+    
+    input[type="text"] {
+        padding: 8px;
+        border: 2px solid #4a772f;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    input[type="submit"] {
+        background-color: #4a772f;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    
+    input[type="submit"]:hover {
+        background-color: #365a23;
+    }
+
+    nav a:hover {
+        color: #4a772f;
+    }
+
+    
+    h2::before {
+        content: "🍃 ";
+    }
+
+    h2::after {
+        content: " 🍵";
+    }
+
+    p::first-letter {
+        font-size: 24px;
+        color: #2f5e1b;
+        font-weight: bold;
+    }
+
+    p::selection {
+        background-color: #c9df8a;
+    }
+
+    
+    .box {
+        background-color: #fff;
+        border: 2px solid #4a772f;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #e3e6d8;
+        padding: 20px;
+    }
+
+    .item {
+        background-color: #ffffff;
+        padding: 15px;
+        border: 2px solid #4a772f;
+        border-radius: 8px;
+        width: 200px;
+        text-align: center;
+    }
+
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    
+    .offer {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: #4a772f;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    
+    p.note {
+        color: #777;
+    }
+
+    
+    #special-note {
+        color: #4a772f !important;
+        font-weight: bold;
+    }
+
+    
+    nav {
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: #555;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="offer">Special Offer: 20% Off All Green Teas!</div>
+
+<header>
+    <h1>🍃 GreenLeaf Tea Shop 🍃</h1>
+    <p>Refreshing blends for every mood</p>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="menu">
+    <h2>Our Tea Menu</h2>
+    <div class="menu">
+        <div class="item box">
+            <h3>Green Tea</h3>
+            <p>Pure and organic.</p>
+            <p class="note" id="special-note">Best Seller</p>
+        </div>
+        <div class="item box">
+            <h3>Masala Chai</h3>
+            <p>Spiced Indian flavor.</p>
+        </div>
+        <div class="item box">
+            <h3>Lemon Honey Tea</h3>
+            <p>Refreshing and soothing.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Our Tea Moments</h2>
+    <div class="gallery">
+        <img src="greentea.jpg" alt="Green Tea">
+        <img src="chai.jpg" alt="Chai">
+        <img src="tea1.jpg" alt="Tea Cup">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+<footer style="text-align:center; background:#e3e6d8; padding:10px;">
+    <p>&copy; 2025 GreenLeaf Tea Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
